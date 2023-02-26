@@ -1,0 +1,73 @@
+@use 'styles/index.scss' as *;
+
+.cardList {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cardItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid $color-medium-grey;
+  border-radius: 10px;
+}
+
+.cardInfo {
+}
+
+.cardNumber {
+  margin-bottom: 5px;
+  font-weight: $fw-medium;
+  @include font-size(16px);
+  color: $color-text-black;
+}
+
+.cardStatus {
+  font-weight: $fw-medium;
+  @include font-size(12px);
+  color: $color-space-grey;
+}
+
+.closeButton {
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
+  border: 2px solid $color-branding;
+  cursor: pointer;
+
+  & > span {
+    margin: 6px !important;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  max-width: 400px;
+  padding: 30px 25px;
+}
+
+.caption {
+  font-weight: $fw-medium;
+  @include font-size(20px);
+  color: $color-text-black;
+  text-align: center;
+}
+
+.buttonsWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.button {
+  max-width: 186px;
+  padding: 16px 42px;
+}

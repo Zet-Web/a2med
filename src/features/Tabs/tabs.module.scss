@@ -1,0 +1,55 @@
+@use 'styles' as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tabWrapper {
+  height: min-content;
+}
+
+.menuList {
+  display: flex;
+  padding: 0;
+  gap: 25px;
+  margin: 0;
+  list-style-type: none;
+
+  &.nested {
+    gap: 0;
+  }
+}
+
+.menuItem {
+  padding: 15px 38px;
+  border: 2px solid $color-branding;
+  border-radius: 10px;
+  background-color: transparent;
+  @include font-size(16px);
+  font-weight: $fw-regular;
+  color: $color-text-black;
+  cursor: pointer;
+
+  &.active {
+    background-color: $color-branding;
+    color: $color-white;
+    font-weight: $fw-medium;
+  }
+}
+
+.menuItemNested {
+  padding: 12px 27px;
+  background-color: transparent;
+  @include font-size(16px);
+  font-weight: $fw-medium;
+  color: $color-text-black;
+  cursor: pointer;
+
+  &.active {
+    border-radius: 100px;
+    background-color: $color-space-grey;
+    color: $color-white;
+  }
+}

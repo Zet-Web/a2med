@@ -1,0 +1,64 @@
+@use 'styles' as *;
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+
+  :global(.swiper) {
+    margin: 0;
+    padding: 0 20px;
+    width: 100%;
+  }
+
+  :global(.swiper-button-prev),
+  :global(.swiper-button-next) {
+    &::after {
+      content: none;
+    }
+  }
+
+  &.inner {
+    padding: 20px 40px;
+    background-color: $color-white;
+    border-radius: 15px;
+  }
+}
+
+.swiperButtonPrev,
+.swiperButtonNext {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 40px;
+  z-index: 2;
+  cursor: pointer;
+
+  &::after {
+    content: '';
+  }
+}
+
+.swiperButtonPrev {
+  background-image: url('/assets/icons/prev-arrow.svg');
+  left: 0px;
+}
+.swiperButtonNext {
+  background-image: url('/assets/icons/next-arrow.svg');
+  right: 0px;
+}
+
+.inner {
+  .swiperButtonPrev {
+    background-image: url('/assets/icons/prev-arrow-branding.svg');
+    left: 10px;
+  }
+  .swiperButtonNext {
+    background-image: url('/assets/icons/next-arrow-branding.svg');
+    right: 10px;
+  }
+}

@@ -1,0 +1,91 @@
+@use 'styles' as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: $color-white;
+}
+
+.title {
+  margin-bottom: 20px;
+  @include font-size(24px);
+  color: $color-text-black;
+}
+
+.text {
+  margin-bottom: 25px;
+  @include font-size(16px);
+  color: $color-text-black;
+}
+
+.button {
+  margin-top: auto;
+  display: block;
+  max-width: 164px;
+  padding: 12.5px;
+  border-radius: 5px;
+  border: 3px solid $color-branding;
+  background: $color-branding;
+  font-weight: $fw-medium;
+  @include font-size(14px);
+  color: $color-white;
+  text-align: center;
+
+  &:hover {
+    color: $color-branding;
+    background-color: $color-white;
+  }
+}
+
+.image {
+  flex-shrink: 0;
+  width: 120px;
+  height: 120px;
+}
+
+.small {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+
+  & .item {
+    gap: 40px;
+    padding: 20px;
+    cursor: pointer;
+  }
+
+  & .title {
+    margin-bottom: 10px;
+    @include font-size(20px);
+  }
+
+  & .text {
+    margin-bottom: 0px;
+    @include font-size(14px);
+  }
+
+  & .image {
+    width: 82px;
+    height: 82px;
+  }
+}

@@ -1,0 +1,66 @@
+@use 'styles' as *;
+
+.container {
+  max-width: 570px;
+  width: 100%;
+}
+
+.heading {
+  margin-bottom: 20px;
+  font-weight: $fw-semibold;
+  @include font-size(20px);
+  color: $color-text-black;
+}
+
+.item {
+  height: 96px;
+  display: flex;
+  justify-content: space-between;
+  padding: 14px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid $color-medium-grey;
+}
+
+.leftContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.name {
+  font-weight: $fw-semibold;
+  @include font-size(14px);
+  color: $color-text-black;
+}
+
+.price {
+  font-weight: $fw-semibold;
+  @include font-size(16px);
+  color: $color-text-black;
+}
+
+.rightContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.date {
+  display: flex;
+  justify-content: flex-end;
+  @include font-size(12px, 1);
+  color: $color-space-grey;
+}
+
+.button {
+  margin-top: auto;
+  padding: 9px 12px;
+  @include font-size(12px, 1);
+}
+
+.active {
+  color: $color-black;
+  background-color: $color-light-grey;
+  border-color: $color-light-grey;
+}

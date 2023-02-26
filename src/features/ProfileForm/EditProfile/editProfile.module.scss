@@ -1,0 +1,75 @@
+@use 'styles' as *;
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, minmax(min-content, max-content));
+  gap: 15px 40px;
+  margin-bottom: 30px;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input {
+  border-radius: 5px;
+}
+
+.labelText {
+  font-weight: $fw-regular;
+  @include font-size(14px);
+  color: $color-space-grey;
+}
+
+.order {
+  order: 1;
+}
+
+.select {
+  padding: 11px;
+  border: 1px solid $color-space-grey;
+  border-radius: 5px;
+}
+
+.checkbox {
+  grid-column: 1 / -1;
+  height: max-content;
+}
+
+.calendar {
+  background-color: transparent;
+}
+
+.calendarInput {
+  padding: 10px;
+  border: 1px solid $color-space-grey;
+  @include font-size(14px);
+  font-weight: $fw-regular;
+  color: $color-text-black;
+  background-color: $color-white;
+}
+
+.phoneInput {
+  height: 38px;
+  margin: 0;
+  padding: 10px;
+  @include font-size(14px);
+  font-weight: $fw-regular;
+  color: $color-text-black;
+}
+
+.buttonsWrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.saveButton {
+  max-width: 242px;
+}
+
+.cancelButton {
+  max-width: 155px;
+}

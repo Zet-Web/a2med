@@ -1,0 +1,58 @@
+@use 'styles' as *;
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px 40px;
+}
+
+.input {
+  border-radius: 5px;
+}
+
+.select {
+  padding: 11px;
+  border: 1px solid $color-space-grey;
+  border-radius: 5px;
+}
+
+.checkbox {
+  grid-column: 1;
+  margin-bottom: 5px;
+}
+
+.labelContainer {
+  grid-column: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.labelText {
+  @include font-size(14px);
+  color: $color-space-grey;
+}
+
+.calendar {
+  border-radius: 5px;
+  border: 1px solid $color-space-grey;
+}
+
+.calendarInput {
+  padding: 0 10px;
+  font-weight: $fw-regular;
+  @include font-size(14px);
+  background: $color-white;
+}
+
+.buttonWrapper {
+  grid-column: 1 / 3;
+  display: flex;
+  gap: 15px;
+}
+
+.button {
+  max-width: 160px;
+}

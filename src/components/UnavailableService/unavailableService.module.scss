@@ -1,0 +1,47 @@
+@use 'styles' as *;
+
+.container {
+  padding-top: 100px;
+}
+
+.window {
+  margin: auto;
+  max-width: 415px;
+  background-color: $color-white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 40px;
+}
+
+.icon {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 20px;
+}
+
+.title {
+  margin-bottom: 15px;
+  @include font-size(24px);
+  font-weight: $fw-medium;
+  color: $color-text-black;
+}
+
+.text {
+  margin-bottom: 20px;
+  @include font-size(16px);
+  color: $color-text-black;
+  text-align: center;
+}
+
+.button {
+  background-color: $color-branding;
+  width: 335px;
+  border-radius: 5px;
+  padding: 16px 42px;
+  font-weight: $fw-medium;
+  @include font-size(14px);
+  color: $color-white;
+  text-align: center;
+}

@@ -1,0 +1,17 @@
+@use 'styles' as *;
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: $fw-regular;
+  @include font-size(14px);
+  color: $color-text-black;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  accent-color: $color-branding;
+}

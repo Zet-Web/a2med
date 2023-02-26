@@ -1,0 +1,76 @@
+@use 'styles' as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.labelText {
+  font-weight: $fw-regular;
+  @include font-size(14px);
+  color: $color-space-grey;
+}
+
+.errorText {
+  font-weight: $fw-regular;
+  @include font-size(14px);
+  color: $color-red;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 0 10px;
+  border-radius: 10px;
+  border: 1px solid $color-space-grey;
+  background-color: $color-white;
+
+  &:focus-within {
+    border-color: $color-branding;
+  }
+
+  &.error {
+    border-color: $color-red;
+  }
+}
+
+.searchIcon {
+  width: 25px;
+  height: 25px;
+}
+
+.input {
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
+  @include font-size(14px);
+  font-weight: $fw-regular;
+  color: $color-text-black;
+  outline: none;
+  border: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    caret-color: $color-branding;
+  }
+}
+
+.clearButton {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: $color-white;
+  cursor: pointer;
+}
+
+.inputIcon {
+  width: 15px;
+  height: 5px;
+}

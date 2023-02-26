@@ -1,0 +1,43 @@
+@use 'styles' as *;
+
+.container {
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 760px;
+  background-color: $color-white;
+}
+
+.heading {
+  margin-bottom: 23px;
+  font-weight: $fw-medium;
+  @include font-size(24px);
+}
+
+.passport {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.alert {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.caption {
+  margin-bottom: 10px;
+  font-weight: $fw-medium;
+  @include font-size(16px);
+  color: $color-text-black;
+}
+
+.text {
+  font-weight: $fw-regular;
+  @include font-size(14px);
+  color: rgba($color-space-grey, $alpha: 0.7);
+}
+
+.button {
+  max-width: 160px;
+  margin-left: auto;
+}

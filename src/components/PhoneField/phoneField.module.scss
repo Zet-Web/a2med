@@ -1,0 +1,23 @@
+@use 'styles' as *;
+
+.label {
+  color: $color-space-grey;
+  font-size: 14px;
+}
+
+.input {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  padding: 0 10px;
+  height: 40px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid $color-space-grey;
+  color: $color-space-grey;
+
+  &:focus {
+    color: $color-text-black;
+    border-color: $color-branding;
+    outline: none;
+  }
+}

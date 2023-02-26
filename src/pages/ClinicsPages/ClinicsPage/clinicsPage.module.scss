@@ -1,0 +1,39 @@
+@use 'styles' as *;
+
+.container {
+  @include container;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title {
+  font-weight: $fw-medium;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 640px 460px;
+  gap: 60px;
+}
+
+.clinicsBlock {
+  width: 100%;
+}
+
+.inputWrapper {
+  margin-bottom: 30px;
+}
+
+.input {
+  min-height: 50px;
+  border: none;
+}
+
+.clinics {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px 40px;
+}

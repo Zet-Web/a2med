@@ -1,0 +1,120 @@
+@use 'styles' as *;
+
+.grid {
+  display: grid;
+  grid-template-columns: 33fr 23fr;
+  gap: 40px;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 760px;
+  padding: 30px;
+  padding-right: 60px;
+  border-radius: 15px;
+  background: $color-white;
+  color: $color-text-black;
+}
+
+.withMap {
+  max-width: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  height: max-content;
+  padding: 30px;
+  border-radius: 15px;
+  background: $color-white;
+  color: $color-text-black;
+}
+
+.wrapperInfo {
+}
+
+.title {
+  margin-bottom: 20px;
+  font-weight: $fw-medium;
+  @include font-size(24px);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.listItem {
+  display: grid;
+  grid-template-columns: 160px 300px;
+  gap: 10px;
+
+  & .label {
+    @include font-size(14px, 1);
+    font-weight: $fw-medium;
+    color: $color-space-grey;
+  }
+
+  & .value {
+    @include font-size(16px, 1);
+    color: $color-text-black;
+  }
+}
+
+.caption {
+  margin-bottom: 30px;
+  font-weight: $fw-regular;
+  @include font-size(20px);
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.text {
+  font-weight: $fw-regular;
+  @include font-size(20px);
+}
+
+.total {
+  font-weight: $fw-medium;
+  @include font-size(20px);
+}
+
+.checkbox {
+  margin-bottom: 25px;
+  & .link {
+    font-weight: $fw-medium;
+    color: $color-branding;
+    cursor: pointer;
+  }
+}
+
+.radioGroup {
+  margin-bottom: 25px;
+}
+
+.confirmButton {
+  max-width: 152px;
+  @include font-size(14px, 1);
+}
+
+.split {
+  .radioGroup {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .confirmButton {
+    max-width: 100%;
+  }
+}

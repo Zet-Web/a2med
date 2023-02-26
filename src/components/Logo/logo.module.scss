@@ -1,0 +1,7 @@
+@use 'styles' as *;
+
+.logo {
+  display: block;
+  flex-shrink: 0;
+  cursor: pointer;
+}

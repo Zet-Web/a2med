@@ -1,0 +1,25 @@
+@use 'styles' as *;
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, minmax(min-content, max-content));
+  gap: 20px 40px;
+  margin-bottom: 30px;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.label {
+  font-weight: $fw-regular;
+  @include font-size(14px);
+  color: $color-space-grey;
+}
+
+.button {
+  max-width: 190px;
+}

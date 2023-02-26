@@ -1,0 +1,43 @@
+@use 'styles' as *;
+
+.container {
+  display: flex;
+  max-width: 400px;
+  height: 36px;
+  border-radius: 5px;
+  background: $input-background;
+  cursor: pointer;
+  overflow: hidden;
+
+  &:focus-within {
+    border-color: $color-branding;
+  }
+
+  &.error {
+    border-color: $color-red;
+  }
+}
+
+.iconWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  border-radius: 5px 0 0 5px;
+  background-color: $color-branding;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 23px;
+  border: none;
+  border-radius: 5px;
+
+  font-family: inherit;
+  @include font-size(12px);
+  font-weight: $fw-medium;
+  color: $color-text-black;
+  background: $input-background;
+  outline: none;
+  cursor: pointer;
+}

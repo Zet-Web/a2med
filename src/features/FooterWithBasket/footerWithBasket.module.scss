@@ -1,0 +1,33 @@
+@use 'styles' as *;
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  background-color: $color-white;
+}
+
+.container {
+  @include container;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 150px;
+  color: $color-text-black;
+}
+
+.buttonWrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.price {
+  @include font-size(20px);
+  font-weight: $fw-medium;
+  white-space: nowrap;
+}
+
+.button {
+  height: 50px;
+}

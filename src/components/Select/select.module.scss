@@ -1,0 +1,90 @@
+@use 'styles' as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.labelText {
+  font-weight: $fw-regular;
+  @include font-size(14px);
+  color: $color-space-grey;
+}
+
+.selectWrapper {
+  position: relative;
+  padding: 18px 50px;
+  border-radius: 10px;
+  background-color: $color-white;
+
+  @include font-size(14px, 1);
+  cursor: pointer;
+}
+
+.searchIcon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  width: 25px;
+  height: 25px;
+  transform: translateY(-50%);
+}
+
+.label {
+  color: $color-text-black;
+}
+
+.placeholder {
+  color: $color-space-grey;
+}
+
+.selectArrow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 36px;
+  cursor: pointer;
+
+  & > span {
+    margin: 12px !important;
+  }
+
+  &.close {
+    transform: rotate(180deg);
+  }
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  background-color: $color-white;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transform: translateY(5px);
+  overflow: hidden;
+}
+
+.option {
+  border-top-left-radius: 10px;
+  width: 100%;
+  padding: 10px;
+  color: $color-text-black;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid $color-bright-grey;
+  }
+
+  &:hover {
+    background-color: $color-background;
+  }
+}

@@ -1,0 +1,36 @@
+@use 'styles' as *;
+
+.container {
+  padding: 40px;
+  border-radius: 10px;
+  background-color: $color-white;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.stockCard {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid $color-medium-grey;
+  border-radius: 10px;
+}
+
+.stockTitle {
+  margin-bottom: 5px;
+}
+
+.stockText {
+  margin-bottom: 15px;
+  @include font-size(12px);
+  color: $color-space-grey;
+}
+
+.link {
+  font-weight: $fw-medium;
+  @include font-size(14px);
+  color: $color-branding;
+  cursor: pointer;
+}

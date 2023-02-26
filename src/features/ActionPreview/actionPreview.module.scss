@@ -1,0 +1,72 @@
+@use 'styles' as *;
+
+.wrapper {
+  max-width: 760px;
+  height: max-content;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 15px;
+  background: $color-white;
+  color: $color-text-black;
+}
+
+.image {
+  position: relative;
+  min-height: 240px;
+  margin-bottom: 40px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.title {
+  font-weight: $fw-medium;
+  @include font-size(28px);
+  margin-bottom: 10px;
+}
+
+.title2 {
+  font-weight: $fw-medium;
+  @include font-size(20px);
+  margin-bottom: 10px;
+}
+
+.text {
+  font-weight: $fw-regular;
+  @include font-size(16px);
+}
+
+.pay {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.payTextBlock1 {
+  margin-bottom: 40px;
+}
+
+.payText {
+  max-width: 440px;
+}
+
+.textPay {
+  font-weight: $fw-regular;
+  @include font-size(20px);
+}
+
+.sum {
+  font-weight: $fw-medium;
+  @include font-size(20px);
+}
+
+.link {
+  font-weight: $fw-regular;
+  color: $color-branding;
+  cursor: pointer;
+}
+
+.button {
+  max-width: 164px;
+  font-weight: $fw-medium;
+  @include font-size(14px);
+}

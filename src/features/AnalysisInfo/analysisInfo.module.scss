@@ -1,0 +1,39 @@
+@use 'styles' as *;
+
+.container {
+  background-color: $color-white;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+  padding: 20px;
+  padding-right: 30px;
+}
+
+.caption {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  @include font-size(20px);
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  border: 2px solid $color-branding;
+
+  & > span {
+    margin: 13px !important;
+  }
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  @include font-size(16px);
+  font-weight: $fw-medium;
+  color: $color-text-black;
+}

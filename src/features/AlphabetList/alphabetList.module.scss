@@ -1,0 +1,48 @@
+@use 'styles' as *;
+
+.alphabetList {
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.columns {
+  column-count: 4;
+  column-fill: auto;
+  column-width: auto;
+  gap: 100px;
+}
+
+.listItem {
+  position: relative;
+  margin-bottom: 15px;
+  padding-left: 20px;
+  @include font-size(16px, 1);
+  font-weight: $fw-regular;
+  color: $color-text-black;
+
+  &:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+}
+
+.letter {
+  position: absolute;
+  left: 0;
+  color: $color-medium-grey;
+}
+
+.button {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  font: inherit;
+  text-align: start;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-branding;
+  }
+}

@@ -1,0 +1,30 @@
+@use 'styles' as *;
+
+.container {
+  @include container;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title {
+  font-weight: $fw-medium;
+}
+
+.wrapper {
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 200px;
+  background-color: $color-white;
+}
+
+.basket {
+  @include font-size(24px);
+  font-weight: $fw-semibold;
+}
+
+.color {
+  color: $color-branding;
+}

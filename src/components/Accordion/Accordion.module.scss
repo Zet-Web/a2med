@@ -1,0 +1,72 @@
+@use 'styles' as *;
+
+.accordion {
+  width: 100%;
+  padding: 17px 20px;
+  border-radius: 10px;
+  background-color: $color-white;
+}
+
+.headerContent {
+  position: relative;
+  cursor: pointer;
+}
+
+.toggleIcon {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  transition: transform 0.2s ease-in-out;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 50%;
+    display: block;
+    width: 1px;
+    height: 20px;
+    background-color: $color-medium-grey;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: block;
+    width: 20px;
+    height: 1px;
+    background-color: $color-medium-grey;
+  }
+
+  &.isOpen {
+    transform: rotate(45deg);
+  }
+}
+
+.titleClass {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 17px;
+
+  .title {
+    width: 100%;
+    color: $color-text-black;
+  }
+}
+
+.contentClass {
+  padding: 20px 0;
+  width: 100%;
+
+  span,
+  p {
+    font-weight: $fw-medium;
+    @include font-size(16px);
+    color: $color-medium-grey;
+  }
+}

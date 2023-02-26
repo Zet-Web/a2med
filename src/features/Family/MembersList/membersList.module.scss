@@ -1,0 +1,87 @@
+@use 'styles' as *;
+
+.addButton {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  border: none;
+  font-size: 14px;
+
+  &:hover {
+    color: $color-text-black;
+    background-color: transparent;
+  }
+}
+
+.addIcon {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: $color-branding;
+  transform: rotate(45deg);
+
+  & > span {
+    margin: 7px !important;
+  }
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid $color-medium-grey;
+  border-radius: 4px;
+  width: 100%;
+  padding: 10px;
+  padding-right: 20px;
+}
+
+.name {
+  font-weight: $fw-medium;
+  @include font-size(16px);
+  color: $color-text-black;
+}
+
+.memberIconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid $color-branding;
+}
+.memberIcon {
+  width: 11.5px;
+  height: 11.5px;
+}
+
+@mixin icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid $color-branding;
+  & > span {
+    margin: 7px !important;
+  }
+}
+
+.editIcon {
+  margin-left: auto;
+  margin-right: 5px;
+  @include icon;
+}
+
+.deleteIcon {
+  @include icon;
+}

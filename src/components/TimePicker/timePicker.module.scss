@@ -1,0 +1,45 @@
+@use 'styles' as *;
+
+.timePicker {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  max-width: 300px;
+  column-gap: 20px;
+  row-gap: 13px;
+
+  &.columns_3 {
+    grid-template-columns: repeat(3, 60px);
+  }
+  &.columns_4 {
+    grid-template-columns: repeat(4, 60px);
+  }
+  &.columns_5 {
+    grid-template-columns: repeat(5, 60px);
+  }
+  &.columns_6 {
+    grid-template-columns: repeat(6, 60px);
+  }
+  &.columns_7 {
+    grid-template-columns: repeat(7, 60px);
+  }
+  &.columns_8 {
+    grid-template-columns: repeat(8, 60px);
+  }
+}
+
+.timeButton {
+  height: 32px;
+  font-weight: $fw-medium;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plug {
+  grid-column: 1/-1;
+  justify-self: center;
+  align-self: center;
+  @include font-size(14px);
+  color: $color-text-black;
+}

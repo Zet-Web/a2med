@@ -1,0 +1,74 @@
+@use 'styles' as *;
+
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include container;
+  height: 100px;
+}
+
+.navigation {
+}
+
+.list {
+  display: flex;
+  margin: 0;
+  padding: 0 25px;
+  list-style-type: none;
+  gap: 30px;
+}
+
+.item {
+}
+
+.link {
+  border-bottom: 2px solid transparent;
+  @include font-size(14px);
+  color: $color-text-black;
+  white-space: nowrap;
+
+  &:hover {
+    text-shadow: 0 0 1px $color-text-black;
+    border-bottom-color: $color-branding;
+  }
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 15px;
+}
+
+.counter {
+  position: absolute;
+  left: -9px;
+  bottom: -9px;
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $color-white;
+  background-color: $color-branding;
+}
+
+.openSidebar {
+  padding: 0;
+  border: none !important;
+}
+
+.avatar {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid $button-background;
+  color: $color-branding;
+  background-color: $button-background;
+
+  &:hover {
+    border-color: $color-branding;
+  }
+}

@@ -1,0 +1,21 @@
+@use 'styles' as *;
+
+.container {
+  @include container;
+  padding-top: 60px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title {
+  font-weight: $fw-medium;
+  @include font-size(32px);
+}

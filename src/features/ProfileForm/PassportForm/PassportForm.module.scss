@@ -1,0 +1,76 @@
+@use 'styles' as *;
+
+.container {
+  max-width: 760px;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: $color-white;
+}
+
+.heading {
+  margin-bottom: 23px;
+  font-weight: $fw-medium;
+  @include font-size(24px);
+}
+
+.alert {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 47px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px 40px;
+  margin-bottom: 30px;
+}
+
+.input {
+  border-radius: 5px;
+}
+
+.order {
+  order: 1;
+}
+
+.calendarLabel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-height: 62px;
+}
+
+.labelText {
+  @include font-size(14px);
+  color: $color-space-grey;
+}
+
+.arrowIcon {
+  position: absolute;
+  z-index: 2;
+  bottom: 12px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.calendar {
+  background-color: transparent;
+}
+
+.calendarInput {
+  padding: 10px;
+  border: 1px solid $color-space-grey;
+  @include font-size(14px);
+  font-weight: $fw-regular;
+  color: $color-text-black;
+  background-color: $color-white;
+}
+
+.buttonsWrapper {
+  display: flex;
+  gap: 15px;
+  max-width: 330px;
+}

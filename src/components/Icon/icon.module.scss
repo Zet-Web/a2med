@@ -1,0 +1,17 @@
+@use 'styles' as *;
+
+.iconWrapper {
+  display: inline-block;
+  position: relative;
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+button.iconWrapper {
+  cursor: pointer;
+}

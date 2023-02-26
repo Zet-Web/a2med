@@ -1,0 +1,35 @@
+@use 'styles' as *;
+
+.container {
+  @include container;
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 660px 460px;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.input {
+  height: 50px;
+  border: none;
+}
+
+.button {
+  max-width: 184px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.caption {
+  margin-bottom: 20px;
+}

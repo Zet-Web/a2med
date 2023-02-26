@@ -1,0 +1,33 @@
+@use 'styles' as *;
+
+.buttonWrapper {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  max-width: 360px;
+  min-height: 80px;
+  background-color: $color-white;
+  border: none;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  border: 2px solid $color-branding;
+
+  & > span {
+    margin: 6px !important;
+  }
+}
+
+.title {
+  @include font-size(16px);
+  font-weight: $fw-medium;
+  color: $color-text-black;
+}
+
+.arrow {
+  margin-left: auto;
+}

@@ -1,0 +1,15 @@
+@use 'styles' as *;
+
+.wrapper {
+  display: flex;
+  gap: 18px;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: $color-white;
+}
+
+.text {
+  max-width: 781px;
+  @include font-size(16px);
+  color: $color-text-black;
+}

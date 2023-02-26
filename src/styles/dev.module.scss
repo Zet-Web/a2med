@@ -1,0 +1,36 @@
+@use 'styles' as *;
+
+.container {
+  @include container;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style-type: disc;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.link {
+  color: blue;
+  text-decoration: underline;
+
+  &:hover {
+    color: blueviolet;
+  }
+}
+
+.empty {
+  color: red;
+  text-decoration: underline;
+
+  pointer-events: none;
+}

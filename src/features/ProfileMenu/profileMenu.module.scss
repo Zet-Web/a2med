@@ -1,0 +1,61 @@
+@use 'styles' as *;
+
+.container {
+  display: grid;
+  grid-template-columns: 360px 760px;
+  gap: 40px;
+}
+
+.tabWrapper {
+  height: min-content;
+}
+
+.menuList {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 0;
+  padding: 20px;
+  height: fit-content;
+  border-radius: 10px;
+  background: $color-white;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-top: 1px solid $color-medium-grey;
+  border-bottom: 1px solid $color-medium-grey;
+  min-height: 62px;
+  padding-right: 15px;
+  cursor: pointer;
+
+  &.active {
+    border-top: 2px solid $color-branding;
+    border-bottom: 2px solid $color-branding;
+  }
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  border: 2px solid $color-branding;
+
+  // TODO пофиксить иконки
+  & > span {
+    margin: 6px !important;
+  }
+}
+
+.title {
+  @include font-size(16px);
+  font-weight: $fw-medium;
+  color: $color-black;
+}
+
+.arrow {
+  margin-left: auto;
+  height: 15px;
+}

@@ -1,0 +1,13 @@
+@use 'styles/index.scss' as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 760px;
+}
+
+.title {
+  @include font-size(24px);
+  font-weight: $fw-medium;
+}

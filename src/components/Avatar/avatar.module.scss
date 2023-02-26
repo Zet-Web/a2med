@@ -1,0 +1,19 @@
+@use 'styles' as *;
+
+.imageWrapper {
+  flex-shrink: 0;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: $color-white;
+  overflow: hidden;
+}
+
+.iconWrapper {
+  border: none !important;
+
+  &:hover {
+    border: none !important;
+  }
+}

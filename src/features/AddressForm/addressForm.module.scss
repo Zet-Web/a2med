@@ -1,0 +1,59 @@
+@use 'styles' as *;
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  border-radius: 15px;
+  padding: 30px;
+  padding-bottom: 40px;
+  background-color: $color-white;
+}
+
+.formWrapper {
+  width: 100%;
+  max-width: 335px;
+}
+
+.heading {
+  margin-bottom: 30px;
+  font-weight: 600;
+  @include font-size(24px, 1);
+}
+
+.label {
+  font-weight: 400;
+  @include font-size(14px, 1);
+  color: $color-space-grey;
+}
+
+.formInnerWrap {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(150px, 1fr));
+  gap: 15px 35px;
+}
+
+.long {
+  grid-column: 1 / -1;
+}
+
+.input {
+  border-radius: 5px;
+}
+
+.addressWrapper {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid $color-space-grey;
+  border-radius: 5px;
+}
+
+.addressLabel {
+  font-weight: $fw-regular;
+  @include font-size(14px);
+  color: $color-space-grey;
+}
+
+.addressButton {
+  margin-bottom: 14px;
+}

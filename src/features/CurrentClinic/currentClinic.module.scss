@@ -1,0 +1,115 @@
+@use 'styles' as *;
+
+.container {
+  display: grid;
+  grid-template-columns: 33fr 23fr;
+  gap: 40px;
+}
+
+.wrapper {
+  width: 100%;
+  padding: 30px;
+  border-radius: 15px;
+  background: $color-white;
+  color: $color-text-black;
+}
+
+.heading {
+  margin-bottom: 5px;
+  font-weight: $fw-medium;
+  @include font-size(24px);
+}
+
+.address {
+  margin-bottom: 15px;
+  font-weight: $fw-medium;
+  @include font-size(14px);
+  color: $color-branding;
+}
+
+.list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 22px;
+  margin-bottom: 15px;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  @include font-size(10px);
+
+  & .day {
+    border: 1px solid $color-branding;
+    border-radius: 5px;
+    padding: 1.5px 8px;
+
+    color: $color-branding;
+  }
+}
+
+.phoneWrapper {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+
+  & .icon {
+    border-radius: 15px;
+    background-color: $color-branding;
+
+    & > span {
+      margin: 6px !important;
+    }
+  }
+
+  & .number {
+    display: flex;
+    align-items: center;
+    font-weight: $fw-medium;
+    @include font-size(12px);
+    color: $color-branding;
+  }
+}
+
+.gallery {
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.image {
+  position: relative;
+  height: 100px;
+  width: 180px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.caption {
+  margin-bottom: 10px;
+  font-weight: $fw-semibold;
+  @include font-size(18px);
+}
+
+.description {
+  margin-bottom: 30px;
+  max-width: 550px;
+  @include font-size(12px);
+  color: $color-text-black;
+  opacity: 0.7;
+}
+
+.confirmButton {
+  max-width: 152px;
+  @include font-size(14px);
+}
+
+.map {
+  height: 380px;
+}

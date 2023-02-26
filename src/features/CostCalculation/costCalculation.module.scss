@@ -1,0 +1,84 @@
+@use 'styles' as *;
+
+.container {
+  max-width: 660px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 35px 30px;
+  border-radius: 15px;
+  color: $color-text-black;
+  background-color: $color-white;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.heading {
+  font-weight: $fw-regular;
+  @include font-size(24px, 1);
+}
+
+.delete {
+  font-weight: $fw-regular;
+  @include font-size(14px, 1);
+  color: $color-branding;
+  cursor: pointer;
+}
+
+.serviceList {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+  list-style-type: none;
+  max-height: 200px;
+}
+
+.serviceItem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.caption {
+  padding-top: 10px;
+  @include font-size(18px, 1);
+}
+
+.price {
+  font-weight: $fw-medium;
+  @include font-size(20px);
+}
+
+.date {
+  @include font-size(14px, 1);
+  color: $color-space-grey;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.captionSummary {
+  font-weight: $fw-medium;
+  @include font-size(18px);
+}
+
+.alert {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 15px;
+  border-top: 1px solid $color-bright-grey;
+  @include font-size(14px);
+  color: $color-space-grey;
+}

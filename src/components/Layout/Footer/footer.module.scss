@@ -1,0 +1,96 @@
+@use 'styles' as *;
+
+.footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 80px;
+  @include container;
+  padding-top: 40px;
+  height: 220px;
+}
+
+.logoBlock {
+  flex-shrink: 0;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.trademark {
+  @include font-size(16px);
+  color: $color-medium-grey;
+}
+
+.navigation {
+  margin-right: 10vw;
+}
+
+.list {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(4, 1fr);
+  margin: 0;
+  padding: 0 25px;
+  list-style-type: none;
+  gap: 20px 80px;
+}
+
+.item {
+}
+
+.link {
+  border-bottom: 2px solid transparent;
+  @include font-size(14px);
+  color: $color-text-black;
+  white-space: nowrap;
+
+  &:hover {
+    text-shadow: 0px 0px 1px $color-text-black;
+    border-bottom-color: $color-branding;
+  }
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 15px;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: $color-text-black;
+  font-style: normal;
+  white-space: nowrap;
+}
+
+.addressWrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.iconWrapper {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  border: 5px solid $color-branding;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $color-white;
+  background-color: $color-branding;
+}
+
+.phone {
+  font-weight: $fw-medium;
+  @include font-size(24px);
+}
+
+.location {
+  font-weight: $fw-medium;
+  @include font-size(18px);
+}

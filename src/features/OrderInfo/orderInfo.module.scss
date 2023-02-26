@@ -1,0 +1,68 @@
+@use 'styles' as *;
+
+.container {
+  background-color: $color-white;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+  padding: 26px;
+  padding-right: 95px;
+}
+
+.doctorInfo {
+  display: flex;
+  gap: 30px;
+  flex: 1;
+}
+
+.avatar {
+  width: 88px;
+  height: 88px;
+  border-radius: 88px;
+}
+
+.name {
+  margin-bottom: 5px;
+  font-weight: $fw-medium;
+  @include font-size(20px);
+  color: $color-text-black;
+}
+
+.specialty {
+  margin-bottom: 15px;
+  font-weight: $fw-medium;
+  @include font-size(14px);
+  color: $color-branding;
+}
+
+.address {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-style: normal;
+  @include font-size(14px);
+  color: $color-text-black;
+}
+
+.serviceInfo {
+  display: flex;
+  gap: 100px;
+  flex: 1;
+
+  >div {
+    flex: 1;
+  }
+}
+
+.label {
+  margin-bottom: 10px;
+  @include font-size(16px);
+  font-weight: $fw-medium;
+  color: $color-space-grey;
+}
+
+.text {
+  @include font-size(16px);
+  font-weight: $fw-medium;
+  color: $color-text-black;
+}

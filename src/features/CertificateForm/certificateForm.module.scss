@@ -1,0 +1,44 @@
+@use 'styles' as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+  padding-right: 80px;
+  background-color: $color-white;
+  border-radius: 10px;
+  height: fit-content;
+}
+
+.alert {
+  display: flex;
+  gap: 10px;
+}
+
+.alertText {
+  max-width: 550px;
+  @include font-size(16px);
+  font-weight: $fw-medium;
+  color: $color-text-black;
+}
+
+.input {
+  width: 100%;
+}
+
+.inputWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 15px;
+  gap: 15px 40px;
+}
+
+.checkbox {
+  margin-bottom: 20px;
+}
+
+.button {
+  width: fit-content;
+  padding: 16px 42px;
+}

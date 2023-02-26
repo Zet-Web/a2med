@@ -1,0 +1,75 @@
+@use 'styles' as *;
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  padding-right: 78px;
+  background-color: $color-white;
+  border-radius: 15px;
+}
+
+.infoBlock {
+  display: flex;
+  gap: 25px;
+}
+
+.avatar {
+  flex-shrink: 0;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border: 6px solid $color-background;
+  border-radius: 100px;
+}
+
+.content {
+  justify-content: flex-start;
+}
+
+.title {
+  font-weight: $fw-medium;
+  @include font-size(20px);
+  color: $color-text-black;
+}
+
+.caption {
+  margin-bottom: 10px;
+  font-weight: $fw-medium;
+  @include font-size(14px);
+  color: $color-branding;
+}
+
+.address {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.street {
+  font-style: normal;
+}
+
+.helperWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+.priceBlock {
+  display: flex;
+  gap: 20px;
+}
+
+.price {
+  padding-top: 5px;
+  font-weight: $fw-medium;
+  @include font-size(20px);
+  color: $color-text-black;
+}
+
+.confirmButton {
+  max-width: fit-content;
+  padding: 8px 42px;
+}

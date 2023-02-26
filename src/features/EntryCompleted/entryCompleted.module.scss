@@ -1,0 +1,57 @@
+@use 'styles' as *;
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px;
+  padding-right: 60px;
+  border-radius: 15px;
+  background: $color-white;
+  color: $color-text-black;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-weight: $fw-medium;
+  @include font-size(24px);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.listItem {
+  display: grid;
+  grid-template-columns: 160px 300px;
+  gap: 10px;
+
+  & .label {
+    @include font-size(14px, 1);
+    font-weight: $fw-medium;
+    color: $color-space-grey;
+  }
+
+  & .value {
+    @include font-size(16px, 1);
+    color: $color-text-black;
+  }
+}
+
+.confirmButton {
+  max-width: 220px;
+  @include font-size(14px, 1);
+}
+
+.text {
+  font-weight: $fw-regular;
+  @include font-size(16px);
+  margin-bottom: 30px;
+  max-width: 350px;
+}

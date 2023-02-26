@@ -1,0 +1,90 @@
+@use 'styles' as *;
+
+.openButton {
+  max-width: 160px;
+  height: 50px;
+  @include font-size(14px);
+}
+
+.modal {
+  width: 100%;
+  max-width: 425px;
+  padding: 40px;
+}
+
+.close {
+  top: 47px;
+  right: 45px;
+}
+
+.caption {
+  margin-bottom: 40px;
+  width: 100%;
+  font-weight: $fw-semibold;
+  @include font-size(24px);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 60px;
+  padding: 0;
+  list-style-type: none;
+
+  &.columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.description {
+  @include font-size(16px);
+  text-align: center;
+  color: $color-text-black;
+}
+
+.item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  color: $color-text-black;
+  background-color: $color-background;
+  cursor: pointer;
+
+  &.active {
+    color: $color-white;
+    background: $color-branding;
+  }
+}
+
+.avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid $color-bright-grey;
+}
+
+.name {
+  font-weight: $fw-medium;
+  @include font-size(14px);
+}
+
+.link {
+  font-weight: $fw-medium;
+  @include font-size(16px, 1);
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  color: $color-branding;
+}
+
+.plug {
+  font-weight: $fw-medium;
+  @include font-size(14px);
+}

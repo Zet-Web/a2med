@@ -1,0 +1,10 @@
+@use 'styles' as *;
+
+.map {
+  width: 100%;
+  max-width: 540px;
+  height: 278px;
+  border-radius: 15px;
+  background-color: $color-white;
+  overflow: hidden;
+}

@@ -1,0 +1,97 @@
+@use 'styles' as *;
+
+.container {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 40px;
+}
+
+.wrapper {
+  height: max-content;
+  padding: 30px;
+  border-radius: 15px;
+  background: $color-white;
+  color: $color-text-black;
+}
+
+.article {
+  margin-bottom: 40px;
+}
+
+.title {
+  margin-bottom: 20px;
+  @include font-size(24px);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.listItem {
+  display: grid;
+  grid-template-columns: 160px 300px;
+  gap: 10px;
+
+  & .label {
+    @include font-size(14px, 1);
+    font-weight: $fw-medium;
+    color: $color-space-grey;
+  }
+
+  .value {
+    @include font-size(16px, 1);
+    color: $color-text-black;
+  }
+}
+
+.datePicker {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.dateButton {
+  display: flex;
+  flex-direction: column;
+  max-width: 126px;
+  height: 53px;
+  padding: 7px 15px;
+
+  &.outline {
+    color: $color-text-black;
+  }
+}
+
+.total {
+  font-weight: $fw-regular;
+  @include font-size(20px);
+}
+
+.input {
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid $color-medium-grey;
+}
+
+.subtitle {
+  font-weight: $fw-regular;
+  @include font-size(20px);
+  margin-bottom: 30px;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+
+  .price {
+    font-weight: $fw-medium;
+    @include font-size(20px);
+  }
+}

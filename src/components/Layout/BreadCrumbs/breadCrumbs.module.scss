@@ -1,0 +1,31 @@
+@use 'styles' as *;
+
+.list {
+  @include container;
+  display: flex;
+  align-items: flex-start;
+  list-style-type: none;
+  gap: 10px;
+  padding-top: 40px;
+}
+
+.item {
+  @include font-size(13px);
+  color: $color-space-grey;
+}
+
+.link {
+  white-space: nowrap;
+
+  &:hover {
+    color: $color-branding;
+    text-decoration: underline;
+  }
+}
+
+.active {
+  font-weight: $fw-medium;
+  @include font-size(13px);
+  color: $color-branding;
+  pointer-events: none;
+}

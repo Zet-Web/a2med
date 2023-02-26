@@ -1,0 +1,68 @@
+@use 'styles' as *;
+
+.container {
+  @include container;
+  padding-top: 40px;
+  padding-bottom: 190px;
+}
+
+.title {
+  @include font-size(32px);
+  color: $color-text-black;
+  font-weight: $fw-medium;
+  margin-bottom: 20px;
+}
+
+.patientPicker {
+  margin-bottom: 40px;
+  max-width: 1160px;
+}
+
+.filterSearch {
+  margin-bottom: 40px;
+}
+
+.bottomBlock {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  background-color: $color-white;
+}
+
+.wrapper {
+  @include container;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.analysesCount {
+  @include font-size(24px);
+  font-weight: $fw-semibold;
+  margin-right: 5px;
+}
+
+.rightWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  @include font-size(20px);
+  font-weight: $fw-medium;
+  margin-right: 20px;
+}
+
+.button {
+  background-color: $color-branding;
+  width: 245px;
+  border-radius: 5px;
+  padding: 16px 42px;
+  font-weight: $fw-medium;
+  @include font-size(14px);
+  color: $color-white;
+  text-align: center;
+}

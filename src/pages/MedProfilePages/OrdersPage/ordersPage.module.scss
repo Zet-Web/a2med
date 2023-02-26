@@ -1,0 +1,37 @@
+@use 'styles' as *;
+
+.container {
+  @include container;
+  padding-top: 40px;
+  padding-bottom: 250px;
+}
+
+.heading {
+  margin-bottom: 20px;
+}
+
+.ordersList {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.dateGroup {
+  margin-bottom: 20px;
+  font-weight: $fw-medium;
+  @include font-size(16px);
+  color: $color-text-black;
+}
+
+.link {
+  display: block;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: 0.3s ease;
+  &:hover {
+    box-shadow: 0 3px 0 rgba(66, 66, 66, 0.226);
+  }
+}

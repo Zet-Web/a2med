@@ -1,0 +1,23 @@
+@use 'styles' as *;
+
+.container {
+  @include container;
+  padding-bottom: 139px;
+  padding-top: 40px;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 660px 460px;
+  gap: 40px;
+}
+
+.rightContent {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}

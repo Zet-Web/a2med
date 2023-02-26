@@ -1,0 +1,24 @@
+@use 'styles' as *;
+
+.button {
+  display: flex;
+  flex-direction: column;
+  max-width: 126px;
+  height: 53px;
+  padding: 7px 15px;
+  user-select: none;
+
+  &.outline {
+    color: $color-text-black;
+  }
+}
+
+.label {
+  font-weight: $fw-medium;
+  @include font-size(15px);
+}
+
+.weekDay {
+  font-weight: $fw-regular;
+  @include font-size(13px);
+}

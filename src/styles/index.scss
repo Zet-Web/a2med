@@ -1,0 +1,26 @@
+@import 'breakpoints';
+@import 'colors';
+@import 'fonts';
+
+$desktop-padding: 30px;
+$tablet-padding: 20px;
+$mobile-padding: 15px;
+
+@mixin container {
+  max-width: 1220px;
+  width: 100%;
+  margin: 0 auto;
+
+  padding-left: $desktop-padding;
+  padding-right: $desktop-padding;
+
+  @include tablet-laptop {
+    padding-left: $tablet-padding;
+    padding-right: $tablet-padding;
+  }
+
+  @include mobile {
+    padding-left: $mobile-padding;
+    padding-right: $mobile-padding;
+  }
+}

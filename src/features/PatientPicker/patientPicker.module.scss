@@ -1,0 +1,53 @@
+@use 'styles' as *;
+
+.container {
+  padding: 30px;
+  padding-bottom: 40px;
+  background-color: $color-white;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.heading {
+  margin-bottom: 25px;
+  font-weight: $fw-regular;
+  @include font-size(24px);
+  color: $color-text-black;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 335px;
+  height: 66px;
+  border-radius: 10px;
+
+  font-weight: $fw-medium;
+  @include font-size(14px);
+  color: $color-text-black;
+  background-color: $color-background;
+  border-color: $color-background;
+}
+
+.active {
+  color: $color-white;
+  background-color: $color-branding;
+  border-color: $color-branding;
+}
+
+.avatar {
+  flex-shrink: 0;
+  position: relative;
+  width: 45px;
+  height: 45px;
+  border: 2px solid $color-white;
+  border-radius: 50%;
+  object-fit: cover;
+}
